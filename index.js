@@ -6,21 +6,21 @@ class hero{
     }
 
     atacar(tipo){
-        if(tipo == 'mago'){
-            console.log(`o ${tipo} atacou usando magia`)
+        if(this.tipo == 'mago'){
+            console.log(`o ${this.tipo} atacou usando magia`)
         }
-        else if(tipo == 'guerreiro'){
-            console.log(`o ${tipo} atacou usando espada`)
+        else if(this.tipo == 'guerreiro'){
+            console.log(`o ${this.tipo} atacou usando espada`)
         }
-        if(tipo == 'monje'){
-            console.log(`o ${tipo} atacou usando artes marciais`)
+        if(this.tipo == 'monje'){
+            console.log(`o ${this.tipo} atacou usando artes marciais`)
         }
-        if(tipo == 'ninja'){
-            console.log(`o ${tipo} atacou usando shuriken`)
+        if(this.tipo == 'Ninja'){
+            console.log(`o ${this.tipo} atacou usando shuriken`)
         }
     }
 } 
 
 const hero1 = new hero('Guilherme',18,'Ninja');
 
-hero1.atacar('guerreiro');
+hero1.atacar();
